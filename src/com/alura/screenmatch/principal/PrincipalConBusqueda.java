@@ -40,7 +40,7 @@ public class PrincipalConBusqueda {
                 break;
             }
 
-            String clave = "6c7d24df"; //clave de entrada a Ombd
+            String clave = System.getenv("OMDB_APIKEY"); //OCULTANDO EL APIKEY CON LA VARIABLE DEL SISTEMA OMDB_APIKEY
             String direccion =  "https://www.omdbapi.com/?t="
                     +busqueda.replace(" ","+")
                     +"&apikey="
